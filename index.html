@@ -383,6 +383,9 @@ footer{padding:40px 60px;background:#1A3A5C;display:flex;justify-content:space-b
 .contact-form input:focus,.contact-form textarea:focus,.contact-form select:focus{outline:none;border-color:var(--copper)}
 .contact-form textarea{min-height:120px;resize:vertical;width:100%}
 .contact-field{display:flex;flex-direction:column;gap:4px}
+.contact-checks{display:flex;flex-direction:column;gap:6px;margin-top:6px}
+@media(min-width:901px){.contact-checks{flex-direction:row;flex-wrap:wrap}}
+.contact-check-label{display:inline-flex;align-items:center;gap:5px;padding:6px 10px;border:1px solid var(--border);border-radius:4px;font-size:12px;color:var(--text-body);cursor:pointer;letter-spacing:0;white-space:nowrap;width:fit-content}
 .contact-row{display:grid;grid-template-columns:1fr;gap:12px}
 @media(min-width:901px){.contact-row{grid-template-columns:1fr 1fr}}
 .contact-submit{padding:14px 32px;background:var(--copper);color:#fff;border:none;border-radius:4px;font-size:14px;font-weight:500;font-family:'Raleway',sans-serif;cursor:pointer;transition:background .3s;width:100%}
@@ -1238,14 +1241,14 @@ footer{padding:40px 60px;background:#1A3A5C;display:flex;justify-content:space-b
 </div>
 <div class="contact-field">
 <label>I AM LOOKING FOR</label>
-<div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:6px">
-<label style="display:inline-flex;align-items:center;gap:5px;padding:6px 10px;border:1px solid var(--border);border-radius:4px;font-size:12px;color:var(--text-body);cursor:pointer;letter-spacing:0;white-space:nowrap"><input type="checkbox" style="accent-color:var(--copper);margin:0"> Sell a Property</label>
-<label style="display:inline-flex;align-items:center;gap:5px;padding:6px 10px;border:1px solid var(--border);border-radius:4px;font-size:12px;color:var(--text-body);cursor:pointer;letter-spacing:0;white-space:nowrap"><input type="checkbox" style="accent-color:var(--copper);margin:0"> Lease My Space</label>
-<label style="display:inline-flex;align-items:center;gap:5px;padding:6px 10px;border:1px solid var(--border);border-radius:4px;font-size:12px;color:var(--text-body);cursor:pointer;letter-spacing:0;white-space:nowrap"><input type="checkbox" style="accent-color:var(--copper);margin:0"> Find Space to Lease</label>
-<label style="display:inline-flex;align-items:center;gap:5px;padding:6px 10px;border:1px solid var(--border);border-radius:4px;font-size:12px;color:var(--text-body);cursor:pointer;letter-spacing:0;white-space:nowrap"><input type="checkbox" style="accent-color:var(--copper);margin:0"> Buy a Property</label>
-<label style="display:inline-flex;align-items:center;gap:5px;padding:6px 10px;border:1px solid var(--border);border-radius:4px;font-size:12px;color:var(--text-body);cursor:pointer;letter-spacing:0;white-space:nowrap"><input type="checkbox" style="accent-color:var(--copper);margin:0"> 1031 Exchange</label>
-<label style="display:inline-flex;align-items:center;gap:5px;padding:6px 10px;border:1px solid var(--border);border-radius:4px;font-size:12px;color:var(--text-body);cursor:pointer;letter-spacing:0;white-space:nowrap"><input type="checkbox" style="accent-color:var(--copper);margin:0"> Deploy Capital</label>
-<label style="display:inline-flex;align-items:center;gap:5px;padding:6px 10px;border:1px solid var(--border);border-radius:4px;font-size:12px;color:var(--text-body);cursor:pointer;letter-spacing:0;white-space:nowrap"><input type="checkbox" style="accent-color:var(--copper);margin:0"> Other</label>
+<div class="contact-checks">
+<label class="contact-check-label"><input type="checkbox" style="accent-color:var(--copper);margin:0"> Sell a Property</label>
+<label class="contact-check-label"><input type="checkbox" style="accent-color:var(--copper);margin:0"> Lease My Space</label>
+<label class="contact-check-label"><input type="checkbox" style="accent-color:var(--copper);margin:0"> Find Space to Lease</label>
+<label class="contact-check-label"><input type="checkbox" style="accent-color:var(--copper);margin:0"> Buy a Property</label>
+<label class="contact-check-label"><input type="checkbox" style="accent-color:var(--copper);margin:0"> 1031 Exchange</label>
+<label class="contact-check-label"><input type="checkbox" style="accent-color:var(--copper);margin:0"> Deploy Capital</label>
+<label class="contact-check-label"><input type="checkbox" style="accent-color:var(--copper);margin:0"> Other</label>
 </div>
 </div>
 <div class="contact-field"><label>MESSAGE</label><textarea placeholder="Tell us about your situation..."></textarea></div>
