@@ -1228,28 +1228,21 @@ footer{padding:40px 60px;background:#1A3A5C;display:flex;justify-content:space-b
 <div>
 <h3 style="font-size:14px;font-weight:600;color:var(--text-dark);margin-bottom:20px;letter-spacing:1px">SEND A MESSAGE</h3>
 <div class="contact-form">
-<div class="contact-row">
 <div class="contact-field"><label>FIRST NAME</label><input type="text" placeholder="First name" required></div>
 <div class="contact-field"><label>LAST NAME</label><input type="text" placeholder="Last name" required></div>
-</div>
-<div class="contact-row">
 <div class="contact-field"><label>COMPANY</label><input type="text" placeholder="Company name"></div>
 <div class="contact-field"><label>EMAIL</label><input type="email" placeholder="Email address" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"></div>
-</div>
-<div class="contact-row">
 <div class="contact-field"><label>PHONE</label><input type="tel" placeholder="Phone number" required pattern="[\d\s\-\(\)\+\.]{7,}"></div>
-<div class="contact-field"></div>
-</div>
 <div class="contact-field">
 <label>I AM LOOKING FOR</label>
-<div class="contact-checks">
-<label class="contact-check-label"><input type="checkbox" style="accent-color:var(--copper);margin:0"> Sell a Property</label>
-<label class="contact-check-label"><input type="checkbox" style="accent-color:var(--copper);margin:0"> Lease My Space</label>
-<label class="contact-check-label"><input type="checkbox" style="accent-color:var(--copper);margin:0"> Find Space to Lease</label>
-<label class="contact-check-label"><input type="checkbox" style="accent-color:var(--copper);margin:0"> Buy a Property</label>
-<label class="contact-check-label"><input type="checkbox" style="accent-color:var(--copper);margin:0"> 1031 Exchange</label>
-<label class="contact-check-label"><input type="checkbox" style="accent-color:var(--copper);margin:0"> Deploy Capital</label>
-<label class="contact-check-label"><input type="checkbox" style="accent-color:var(--copper);margin:0"> Other</label>
+<div style="display:flex;flex-direction:column;gap:4px;margin-top:6px">
+<label style="display:flex;align-items:center;gap:8px;padding:8px 0;font-size:14px;color:#4A5568;cursor:pointer"><input type="checkbox" style="accent-color:#C87941;margin:0;width:18px;height:18px"> Sell a Property</label>
+<label style="display:flex;align-items:center;gap:8px;padding:8px 0;font-size:14px;color:#4A5568;cursor:pointer"><input type="checkbox" style="accent-color:#C87941;margin:0;width:18px;height:18px"> Lease My Space</label>
+<label style="display:flex;align-items:center;gap:8px;padding:8px 0;font-size:14px;color:#4A5568;cursor:pointer"><input type="checkbox" style="accent-color:#C87941;margin:0;width:18px;height:18px"> Find Space to Lease</label>
+<label style="display:flex;align-items:center;gap:8px;padding:8px 0;font-size:14px;color:#4A5568;cursor:pointer"><input type="checkbox" style="accent-color:#C87941;margin:0;width:18px;height:18px"> Buy a Property</label>
+<label style="display:flex;align-items:center;gap:8px;padding:8px 0;font-size:14px;color:#4A5568;cursor:pointer"><input type="checkbox" style="accent-color:#C87941;margin:0;width:18px;height:18px"> 1031 Exchange</label>
+<label style="display:flex;align-items:center;gap:8px;padding:8px 0;font-size:14px;color:#4A5568;cursor:pointer"><input type="checkbox" style="accent-color:#C87941;margin:0;width:18px;height:18px"> Deploy Capital</label>
+<label style="display:flex;align-items:center;gap:8px;padding:8px 0;font-size:14px;color:#4A5568;cursor:pointer"><input type="checkbox" style="accent-color:#C87941;margin:0;width:18px;height:18px"> Other</label>
 </div>
 </div>
 <div class="contact-field"><label>MESSAGE</label><textarea placeholder="Tell us about your situation..."></textarea></div>
