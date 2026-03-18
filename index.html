@@ -478,7 +478,7 @@ footer{padding:40px 60px;background:#1A3A5C;display:flex;justify-content:space-b
 .mobile-nav .mobile-nav-section.open::after{transform:rotate(90deg)}
 .mobile-nav .mobile-subs{display:none;overflow:hidden}
 .mobile-nav .mobile-subs.open{display:block}
-.mobile-nav .mobile-sub{font-size:14px;padding:10px 0 10px 14px;color:var(--text-muted);border-bottom:1px solid var(--border)}
+.mobile-nav .mobile-sub{display:block;font-size:14px;padding:10px 0 10px 14px;color:var(--text-muted);border-bottom:1px solid var(--border)}
 .mobile-nav-cta{margin-top:24px;padding:14px 28px;background:var(--copper);color:#fff!important;border-radius:4px;text-align:center;font-weight:500!important;border-bottom:none!important;letter-spacing:1px;font-size:14px!important}
 
 /* RESPONSIVE */
@@ -2249,6 +2249,11 @@ document.addEventListener('DOMContentLoaded', function() {
     hamburger.addEventListener('click', function() {
       hamburger.classList.toggle('open');
       mobileNav.classList.toggle('open');
+      // Collapse services submenu when closing nav
+      if (!mobileNav.classList.contains('open')) {
+        svcToggle.classList.remove('open');
+        svcSubs.classList.remove('open');
+      }
     });
   }
 });
