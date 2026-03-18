@@ -370,7 +370,8 @@ footer{padding:40px 60px;background:#1A3A5C;display:flex;justify-content:space-b
 .about-value p{font-size:14px;color:var(--text-muted);margin:0}
 
 /* CONTACT PAGE */
-.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.contact-grid{display:grid;grid-template-columns:1fr;gap:48px}
+@media(min-width:901px){.contact-grid{grid-template-columns:1fr 1fr}}
 .contact-info{display:flex;flex-direction:column;gap:24px}
 .contact-card{padding:24px;background:var(--steel-wash);border-radius:10px}
 .contact-card h4{font-size:14px;font-weight:600;color:var(--text-dark);margin-bottom:4px}
@@ -382,8 +383,10 @@ footer{padding:40px 60px;background:#1A3A5C;display:flex;justify-content:space-b
 .contact-form input:focus,.contact-form textarea:focus,.contact-form select:focus{outline:none;border-color:var(--copper)}
 .contact-form textarea{min-height:120px;resize:vertical;width:100%}
 .contact-field{display:flex;flex-direction:column;gap:4px}
-.contact-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.contact-submit{padding:12px 32px;background:var(--copper);color:#fff;border:none;border-radius:4px;font-size:14px;font-weight:500;font-family:'Raleway',sans-serif;cursor:pointer;transition:background .3s;align-self:flex-start}
+.contact-row{display:grid;grid-template-columns:1fr;gap:12px}
+@media(min-width:901px){.contact-row{grid-template-columns:1fr 1fr}}
+.contact-submit{padding:14px 32px;background:var(--copper);color:#fff;border:none;border-radius:4px;font-size:14px;font-weight:500;font-family:'Raleway',sans-serif;cursor:pointer;transition:background .3s;width:100%}
+@media(min-width:901px){.contact-submit{width:auto;align-self:flex-start}}
 .contact-submit:hover{background:var(--copper-light)}
 
 /* MARKET REPORTS PAGE */
